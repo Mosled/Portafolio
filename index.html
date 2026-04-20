@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mosled — Product Designer que programa. Visión de producto, diseño de experiencia y ejecución técnica. De la idea al despliegue." />
+  <meta name="author" content="Mosled" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mosled — Product Designer que programa" />
+  <meta property="og:description" content="Visión de producto. Diseño de experiencia. Ejecución técnica. De la idea al despliegue." />
+
+  <title>Mosled — Product Designer que programa</title>
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonts: Fraunces (display serif), Figtree (body sans), JetBrains Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Figtree:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230A1628'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='60' font-style='italic' text-anchor='middle' fill='%23FAF8F5'%3EM%3C/text%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Grain texture overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo" aria-label="Mosled - Inicio">
+      <svg viewBox="0 0 40 40" class="nav__mark" aria-hidden="true">
+        <rect width="40" height="40" rx="7" class="mark-bg"/>
+        <text x="20" y="28" text-anchor="middle" class="mark-letter">M</text>
+      </svg>
+      <span class="nav__name">Mosled</span>
+    </a>
+
+    <nav class="nav__menu" aria-label="Navegación principal">
+      <a href="#work" data-es="Proyectos" data-en="Work">Proyectos</a>
+      <a href="#services" data-es="Servicios" data-en="Services">Servicios</a>
+      <a href="#process" data-es="Proceso" data-en="Process">Proceso</a>
+      <a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
+        <span class="lang-option is-active" data-lang="es">ES</span>
+        <span class="lang-sep">/</span>
+        <span class="lang-option" data-lang="en">EN</span>
+      </button>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema claro/oscuro">
+        <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero__inner container">
+        <p class="eyebrow reveal">
+          <span class="eyebrow__dot"></span>
+          <span data-es="Disponible para nuevos proyectos" data-en="Available for new projects">Disponible para nuevos proyectos</span>
+          <span class="eyebrow__sep">·</span>
+          <span>Zacualtipán, México</span>
+        </p>
+
+        <h1 class="hero__name reveal">
+          <span class="hero__name-line">Mosled</span>
+        </h1>
+
+        <div class="hero__tagline">
+          <p class="hero__title reveal" data-es="Product Designer que programa." data-en="Product Designer who codes.">
+            Product Designer que programa.
+          </p>
+          <p class="hero__sub reveal">
+            <span data-es="Visión de producto. Diseño de experiencia. Ejecución técnica." data-en="Product vision. Experience design. Technical execution.">
+              Visión de producto. Diseño de experiencia. Ejecución técnica.
+            </span>
+            <br/>
+            <em data-es="De la idea al despliegue." data-en="From idea to deployment.">De la idea al despliegue.</em>
+          </p>
+        </div>
+
+        <div class="hero__ctas reveal">
+          <a href="#contact" class="btn btn--primary" data-es="Iniciar un proyecto" data-en="Start a project">
+            Iniciar un proyecto
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 10h12M10 4l6 6-6 6"/></svg>
+          </a>
+          <a href="#work" class="btn btn--ghost" data-es="Ver proyectos" data-en="View work">Ver proyectos</a>
+        </div>
+
+        <div class="hero__scroll" aria-hidden="true">
+          <span data-es="Desliza" data-en="Scroll">Desliza</span>
+          <div class="hero__scroll-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about container" id="about">
+      <div class="section-label reveal">
+        <span class="section-label__num">01</span>
+        <span class="section-label__sep"></span>
+        <span data-es="Enfoque" data-en="Approach">Enfoque</span>
+      </div>
+
+      <h2 class="section-title reveal" data-es="Construyo productos digitales con visión completa." data-en="I build digital products with complete vision.">
+        Construyo productos digitales con visión completa.
+      </h2>
+
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p data-es="Mi fortaleza es conectar la estrategia de producto con la implementación técnica. No soy únicamente diseñador ni únicamente desarrollador — soy quien cierra el ciclo completo: de la hipótesis al producto en producción." data-en="My strength is connecting product strategy with technical implementation. I am not only a designer nor only a developer — I am the one who closes the full cycle: from hypothesis to product in production.">
+            Mi fortaleza es conectar la estrategia de producto con la implementación técnica. No soy únicamente diseñador ni únicamente desarrollador — soy quien cierra el ciclo completo: de la hipótesis al producto en producción.
+          </p>
+          <p data-es="Cada decisión —desde el tipo de letra hasta la arquitectura del backend— responde a una intención clara: resolver un problema real con simplicidad y calidad. Construyo iterando, midiendo y refinando hasta que el producto se siente inevitable." data-en="Every decision —from the typeface to the backend architecture— responds to a clear intention: solving a real problem with simplicity and quality. I build by iterating, measuring and refining until the product feels inevitable.">
+            Cada decisión —desde el tipo de letra hasta la arquitectura del backend— responde a una intención clara: resolver un problema real con simplicidad y calidad. Construyo iterando, midiendo y refinando hasta que el producto se siente inevitable.
+          </p>
+        </div>
+
+        <aside class="about__meta">
+          <div class="meta-block reveal">
+            <span class="meta-block__label" data-es="Base" data-en="Based in">Base</span>
+            <span class="meta-block__value">Zacualtipán, Hidalgo · MX</span>
+          </div>
+          <div class="meta-block reveal">
+            <span class="meta-block__label" data-es="Formación" data-en="Background">Formación</span>
+            <span class="meta-block__value" data-es="Lic. en Tecnologías de la Información y Comunicación" data-en="B.S. in Information and Communication Technologies">Lic. en Tecnologías de la Información y Comunicación</span>
+          </div>
+          <div class="meta-block reveal">
+            <span class="meta-block__label" data-es="Trabajo" data-en="Work">Trabajo</span>
+            <span class="meta-block__value" data-es="Independiente · Proyectos remotos y locales" data-en="Independent · Remote and local projects">Independiente · Proyectos remotos y locales</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="services container" id="services">
+      <div class="section-label reveal">
+        <span class="section-label__num">02</span>
+        <span class="section-label__sep"></span>
+        <span data-es="Servicios" data-en="Services">Servicios</span>
+      </div>
+
+      <h2 class="section-title reveal" data-es="Qué puedo construir." data-en="What I can build.">Qué puedo construir.</h2>
+
+      <div class="services__list">
+
+        <article class="service reveal">
+          <div class="service__num">01</div>
+          <div class="service__body">
+            <h3 class="service__title" data-es="Desarrollo Web" data-en="Web Development">Desarrollo Web</h3>
+            <p class="service__desc" data-es="Sitios informativos, landing pages y aplicaciones web desarrolladas con HTML, CSS y JavaScript. Rendimiento optimizado, accesibilidad y SEO desde el diseño." data-en="Informational sites, landing pages and web applications built with HTML, CSS and JavaScript. Optimized performance, accessibility and SEO by design.">
+              Sitios informativos, landing pages y aplicaciones web desarrolladas con HTML, CSS y JavaScript. Rendimiento optimizado, accesibilidad y SEO desde el diseño.
+            </p>
+            <ul class="service__tags">
+              <li>Landing pages</li>
+              <li data-es="Sitios corporativos" data-en="Corporate sites">Sitios corporativos</li>
+              <li>PWAs</li>
+              <li>Responsive</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service reveal">
+          <div class="service__num">02</div>
+          <div class="service__body">
+            <h3 class="service__title" data-es="Sistemas Completos" data-en="Full Systems">Sistemas Completos</h3>
+            <p class="service__desc" data-es="Plataformas web con autenticación, base de datos y panel de administración. Desde el modelo de datos hasta la interfaz final, integrando Supabase, PostgreSQL y servicios serverless." data-en="Web platforms with authentication, database and admin panel. From the data model to the final interface, integrating Supabase, PostgreSQL and serverless services.">
+              Plataformas web con autenticación, base de datos y panel de administración. Desde el modelo de datos hasta la interfaz final, integrando Supabase, PostgreSQL y servicios serverless.
+            </p>
+            <ul class="service__tags">
+              <li data-es="Autenticación" data-en="Authentication">Autenticación</li>
+              <li data-es="Base de datos" data-en="Database">Base de datos</li>
+              <li data-es="Panel admin" data-en="Admin panel">Panel admin</li>
+              <li>APIs</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service reveal">
+          <div class="service__num">03</div>
+          <div class="service__body">
+            <h3 class="service__title" data-es="Diseño UI/UX" data-en="UI/UX Design">Diseño UI/UX</h3>
+            <p class="service__desc" data-es="Sistemas de diseño coherentes, tokens, tipografía y jerarquía visual. Interfaces pensadas para funcionar: claras, accesibles y con personalidad." data-en="Coherent design systems, tokens, typography and visual hierarchy. Interfaces designed to work: clear, accessible and with personality.">
+              Sistemas de diseño coherentes, tokens, tipografía y jerarquía visual. Interfaces pensadas para funcionar: claras, accesibles y con personalidad.
+            </p>
+            <ul class="service__tags">
+              <li data-es="Sistemas de diseño" data-en="Design systems">Sistemas de diseño</li>
+              <li>Prototipado</li>
+              <li>Wireframes</li>
+              <li>Branding</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service reveal">
+          <div class="service__num">04</div>
+          <div class="service__body">
+            <h3 class="service__title" data-es="E-commerce y Directorios" data-en="E-commerce & Directories">E-commerce y Directorios</h3>
+            <p class="service__desc" data-es="Plataformas con lógica de negocio real: catálogos, búsquedas con filtros, perfiles verificados, sistemas de reseñas y planes de suscripción." data-en="Platforms with real business logic: catalogs, filtered search, verified profiles, review systems and subscription plans.">
+              Plataformas con lógica de negocio real: catálogos, búsquedas con filtros, perfiles verificados, sistemas de reseñas y planes de suscripción.
+            </p>
+            <ul class="service__tags">
+              <li data-es="Catálogos" data-en="Catalogs">Catálogos</li>
+              <li data-es="Búsqueda avanzada" data-en="Advanced search">Búsqueda avanzada</li>
+              <li data-es="Perfiles" data-en="Profiles">Perfiles</li>
+              <li data-es="Reseñas" data-en="Reviews">Reseñas</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service reveal">
+          <div class="service__num">05</div>
+          <div class="service__body">
+            <h3 class="service__title" data-es="Automatización" data-en="Automation">Automatización</h3>
+            <p class="service__desc" data-es="Scripts en Python para procesos repetitivos, generación de documentos PDF profesionales con ReportLab, integraciones con APIs y herramientas internas a medida." data-en="Python scripts for repetitive processes, professional PDF document generation with ReportLab, API integrations and custom internal tools.">
+              Scripts en Python para procesos repetitivos, generación de documentos PDF profesionales con ReportLab, integraciones con APIs y herramientas internas a medida.
+            </p>
+            <ul class="service__tags">
+              <li>Python</li>
+              <li data-es="PDFs automatizados" data-en="Automated PDFs">PDFs automatizados</li>
+              <li data-es="Integraciones API" data-en="API integrations">Integraciones API</li>
+              <li data-es="Herramientas internas" data-en="Internal tools">Herramientas internas</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= WORK / PROJECTS ================= -->
+    <section class="work container" id="work">
+      <div class="section-label reveal">
+        <span class="section-label__num">03</span>
+        <span class="section-label__sep"></span>
+        <span data-es="Proyectos" data-en="Work">Proyectos</span>
+      </div>
+
+      <h2 class="section-title reveal" data-es="Trabajo en producción." data-en="Work in production.">Trabajo en producción.</h2>
+
+      <!-- Nowdii -->
+      <article class="project reveal">
+        <header class="project__header">
+          <div class="project__meta">
+            <span class="project__year">2024 — <span data-es="presente" data-en="present">presente</span></span>
+            <span class="project__sep"></span>
+            <span class="project__type" data-es="Plataforma · PWA" data-en="Platform · PWA">Plataforma · PWA</span>
+          </div>
+          <div class="project__link-wrap">
+            <a href="https://nowdii.com" target="_blank" rel="noopener" class="project__link">
+              nowdii.com
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3h7v7M13 3 3 13"/></svg>
+            </a>
+          </div>
+        </header>
+
+        <h3 class="project__title">Nowdii</h3>
+
+        <p class="project__lede" data-es="El directorio de tu ciudad. Perfiles reales, activos y cerca de ti." data-en="Your city's directory. Real, active profiles close to you.">
+          El directorio de tu ciudad. Perfiles reales, activos y cerca de ti.
+        </p>
+
+        <div class="project__grid">
+          <div class="project__col">
+            <h4 class="project__col-title" data-es="El problema" data-en="The problem">El problema</h4>
+            <p data-es="Los negocios locales en ciudades medianas y pequeñas de México carecen de un canal de visibilidad digital confiable. Las plataformas existentes son genéricas y no reflejan la realidad del comercio local." data-en="Local businesses in small and medium-sized cities in Mexico lack a reliable digital visibility channel. Existing platforms are generic and don't reflect the reality of local commerce.">
+              Los negocios locales en ciudades medianas y pequeñas de México carecen de un canal de visibilidad digital confiable. Las plataformas existentes son genéricas y no reflejan la realidad del comercio local.
+            </p>
+          </div>
+          <div class="project__col">
+            <h4 class="project__col-title" data-es="La solución" data-en="The solution">La solución</h4>
+            <p data-es="Una PWA con autenticación multi-proveedor, perfiles verificados, sistema de insignias, búsqueda por zona, reseñas, historias y un panel de administración completo. Diseñada desde Zacualtipán para México." data-en="A PWA with multi-provider authentication, verified profiles, badge system, zone search, reviews, stories and a complete admin panel. Designed from Zacualtipán for Mexico.">
+              Una PWA con autenticación multi-proveedor, perfiles verificados, sistema de insignias, búsqueda por zona, reseñas, historias y un panel de administración completo. Diseñada desde Zacualtipán para México.
+            </p>
+          </div>
+        </div>
+
+        <div class="project__tech">
+          <span>HTML / CSS / JS</span>
+          <span>Supabase</span>
+          <span>PostgreSQL</span>
+          <span>Vercel</span>
+          <span>PWA</span>
+          <span>OAuth</span>
+          <span>Resend</span>
+        </div>
+      </article>
+
+      <!-- Deedpri -->
+      <article class="project reveal">
+        <header class="project__header">
+          <div class="project__meta">
+            <span class="project__year">2023 — <span data-es="presente" data-en="present">presente</span></span>
+            <span class="project__sep"></span>
+            <span class="project__type" data-es="Sitio comercial" data-en="Commercial site">Sitio comercial</span>
+          </div>
+          <div class="project__link-wrap">
+            <a href="https://deedpri.com" target="_blank" rel="noopener" class="project__link">
+              deedpri.com
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3h7v7M13 3 3 13"/></svg>
+            </a>
+          </div>
+        </header>
+
+        <h3 class="project__title">deedpri</h3>
+
+        <p class="project__lede" data-es="Centro de impresión y diseño. Calidad profesional, atención personalizada." data-en="Printing and design center. Professional quality, personalized service.">
+          Centro de impresión y diseño. Calidad profesional, atención personalizada.
+        </p>
+
+        <div class="project__grid">
+          <div class="project__col">
+            <h4 class="project__col-title" data-es="El problema" data-en="The problem">El problema</h4>
+            <p data-es="Un centro de impresión físico necesitaba presencia digital seria para captar clientes antes de la visita. La competencia no tenía sitios optimizados ni comunicación clara de servicios." data-en="A physical printing center needed a serious digital presence to capture clients before the visit. Competitors lacked optimized sites or clear service communication.">
+              Un centro de impresión físico necesitaba presencia digital seria para captar clientes antes de la visita. La competencia no tenía sitios optimizados ni comunicación clara de servicios.
+            </p>
+          </div>
+          <div class="project__col">
+            <h4 class="project__col-title" data-es="La solución" data-en="The solution">La solución</h4>
+            <p data-es="Sitio con sistema de design tokens (60+ variables CSS), página fotográfica con estética cinematográfica, calculadora de cotización y PageSpeed de 99/84. Ahora es canal activo de clientes." data-en="Site with design token system (60+ CSS variables), photographic page with cinematic aesthetic, quotation calculator and PageSpeed 99/84. Now an active client channel.">
+              Sitio con sistema de design tokens (60+ variables CSS), página fotográfica con estética cinematográfica, calculadora de cotización y PageSpeed de 99/84. Ahora es canal activo de clientes.
+            </p>
+          </div>
+        </div>
+
+        <div class="project__tech">
+          <span>HTML / CSS / JS</span>
+          <span>Design Tokens</span>
+          <span>Responsive</span>
+          <span>SEO</span>
+          <span>PageSpeed 99</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- ================= STACK ================= -->
+    <section class="stack container" id="stack">
+      <div class="section-label reveal">
+        <span class="section-label__num">04</span>
+        <span class="section-label__sep"></span>
+        <span data-es="Stack" data-en="Stack">Stack</span>
+      </div>
+
+      <h2 class="section-title reveal" data-es="Herramientas de trabajo." data-en="Tools of the trade.">Herramientas de trabajo.</h2>
+
+      <div class="stack__grid">
+        <div class="stack__group reveal">
+          <h4 class="stack__group-title">Frontend</h4>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>PWA</li>
+            <li data-es="Responsive Design" data-en="Responsive Design">Responsive Design</li>
+          </ul>
+        </div>
+
+        <div class="stack__group reveal">
+          <h4 class="stack__group-title">Backend</h4>
+          <ul>
+            <li>Supabase</li>
+            <li>PostgreSQL</li>
+            <li>SQL</li>
+            <li>OAuth 2.0</li>
+            <li>REST APIs</li>
+          </ul>
+        </div>
+
+        <div class="stack__group reveal">
+          <h4 class="stack__group-title" data-es="Herramientas" data-en="Tooling">Herramientas</h4>
+          <ul>
+            <li>Git · GitHub</li>
+            <li>Vercel</li>
+            <li>VS Code</li>
+            <li>Resend</li>
+          </ul>
+        </div>
+
+        <div class="stack__group reveal">
+          <h4 class="stack__group-title" data-es="Diseño" data-en="Design">Diseño</h4>
+          <ul>
+            <li>Figma</li>
+            <li>Canva</li>
+            <li data-es="Sistemas de diseño" data-en="Design systems">Sistemas de diseño</li>
+            <li data-es="Tipografía" data-en="Typography">Tipografía</li>
+          </ul>
+        </div>
+
+        <div class="stack__group reveal">
+          <h4 class="stack__group-title" data-es="Automatización" data-en="Automation">Automatización</h4>
+          <ul>
+            <li>Python</li>
+            <li>ReportLab</li>
+            <li>Tkinter</li>
+            <li>Scripts CLI</li>
+          </ul>
+        </div>
+
+        <div class="stack__group reveal">
+          <h4 class="stack__group-title" data-es="Idiomas" data-en="Languages">Idiomas</h4>
+          <ul>
+            <li data-es="Español — Nativo" data-en="Spanish — Native">Español — Nativo</li>
+            <li data-es="Inglés — Intermedio" data-en="English — Intermediate">Inglés — Intermedio</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESS ================= -->
+    <section class="process container" id="process">
+      <div class="section-label reveal">
+        <span class="section-label__num">05</span>
+        <span class="section-label__sep"></span>
+        <span data-es="Proceso" data-en="Process">Proceso</span>
+      </div>
+
+      <h2 class="section-title reveal" data-es="Cómo trabajo." data-en="How I work.">Cómo trabajo.</h2>
+
+      <ol class="process__list">
+        <li class="process__step reveal">
+          <div class="process__num">01</div>
+          <div class="process__body">
+            <h3 data-es="Descubrimiento" data-en="Discovery">Descubrimiento</h3>
+            <p data-es="Entiendo el problema antes de proponer solución. Conversamos sobre contexto, usuarios, objetivos de negocio y restricciones técnicas para definir qué estamos construyendo y por qué." data-en="I understand the problem before proposing a solution. We talk about context, users, business goals and technical constraints to define what we're building and why.">
+              Entiendo el problema antes de proponer solución. Conversamos sobre contexto, usuarios, objetivos de negocio y restricciones técnicas para definir qué estamos construyendo y por qué.
+            </p>
+          </div>
+        </li>
+
+        <li class="process__step reveal">
+          <div class="process__num">02</div>
+          <div class="process__body">
+            <h3 data-es="Diseño" data-en="Design">Diseño</h3>
+            <p data-es="Establezco la arquitectura de la información, el flujo del usuario y el sistema visual. Prototipado rápido para validar decisiones antes de escribir una línea de código." data-en="I establish information architecture, user flow and visual system. Rapid prototyping to validate decisions before writing a line of code.">
+              Establezco la arquitectura de la información, el flujo del usuario y el sistema visual. Prototipado rápido para validar decisiones antes de escribir una línea de código.
+            </p>
+          </div>
+        </li>
+
+        <li class="process__step reveal">
+          <div class="process__num">03</div>
+          <div class="process__body">
+            <h3 data-es="Desarrollo" data-en="Development">Desarrollo</h3>
+            <p data-es="Implementación iterativa con entregas frecuentes. Código limpio, componentes reutilizables y rendimiento como requisito, no como lujo. Pruebas en cada paso antes de avanzar." data-en="Iterative implementation with frequent deliveries. Clean code, reusable components and performance as a requirement, not a luxury. Testing at every step before advancing.">
+              Implementación iterativa con entregas frecuentes. Código limpio, componentes reutilizables y rendimiento como requisito, no como lujo. Pruebas en cada paso antes de avanzar.
+            </p>
+          </div>
+        </li>
+
+        <li class="process__step reveal">
+          <div class="process__num">04</div>
+          <div class="process__body">
+            <h3 data-es="Lanzamiento" data-en="Launch">Lanzamiento</h3>
+            <p data-es="Despliegue en producción, monitoreo, documentación clara y transferencia de conocimiento. El trabajo no termina al subir el código — termina cuando el producto funciona y tú lo entiendes." data-en="Production deployment, monitoring, clear documentation and knowledge transfer. The work doesn't end when code goes live — it ends when the product works and you understand it.">
+              Despliegue en producción, monitoreo, documentación clara y transferencia de conocimiento. El trabajo no termina al subir el código — termina cuando el producto funciona y tú lo entiendes.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact container" id="contact">
+      <div class="section-label reveal">
+        <span class="section-label__num">06</span>
+        <span class="section-label__sep"></span>
+        <span data-es="Contacto" data-en="Contact">Contacto</span>
+      </div>
+
+      <h2 class="contact__title reveal" data-es="¿Tienes una idea?&lt;br/&gt;Conversemos." data-en="Have an idea?&lt;br/&gt;Let's talk.">¿Tienes una idea?<br/>Conversemos.</h2>
+
+      <p class="contact__lede reveal" data-es="Comparto proyectos seleccionados. Respondo en menos de 24 horas a propuestas serias." data-en="I take on selected projects. I reply within 24 hours to serious inquiries.">
+        Comparto proyectos seleccionados. Respondo en menos de 24 horas a propuestas serias.
+      </p>
+
+      <div class="contact__links">
+        <a href="mailto:tamaa3295@gmail.com" class="contact__link reveal">
+          <span class="contact__link-label" data-es="Correo" data-en="Email">Correo</span>
+          <span class="contact__link-value">tamaa3295@gmail.com</span>
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" class="contact__arrow"><path d="M4 10h12M10 4l6 6-6 6"/></svg>
+        </a>
+
+        <a href="https://wa.me/5217713306543" target="_blank" rel="noopener" class="contact__link reveal">
+          <span class="contact__link-label">WhatsApp</span>
+          <span class="contact__link-value">+52 771 330 6543</span>
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" class="contact__arrow"><path d="M4 10h12M10 4l6 6-6 6"/></svg>
+        </a>
+
+        <a href="https://github.com/Mosled" target="_blank" rel="noopener" class="contact__link reveal">
+          <span class="contact__link-label">GitHub</span>
+          <span class="contact__link-value">github.com/Mosled</span>
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" class="contact__arrow"><path d="M4 10h12M10 4l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__left">
+        <p class="footer__brand">Mosled</p>
+        <p class="footer__tag" data-es="Product Designer que programa" data-en="Product Designer who codes">Product Designer que programa</p>
+      </div>
+
+      <div class="footer__center">
+        <p data-es="Diseñado y construido desde Zacualtipán, México." data-en="Designed and built from Zacualtipán, Mexico.">
+          Diseñado y construido desde Zacualtipán, México.
+        </p>
+      </div>
+
+      <div class="footer__right">
+        <p>© <span id="year">2026</span> Mosled</p>
+        <p class="footer__code">
+          <span data-es="Hecho con" data-en="Crafted with">Hecho con</span>
+          <code>HTML · CSS · JS</code>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
