@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0A0A0A" />
+  <meta name="description" content="Jose Luis Serna · Product Engineer. Construyo productos completos —de la base de datos a la última animación— con sensibilidad de diseño y criterio de sistema." />
+  <meta name="author" content="Jose Luis Serna" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jose Luis Serna · Product Engineer" />
+  <meta property="og:description" content="Diseño, programo y opero productos completos por mi cuenta. De la base de datos a la última animación." />
+  <meta property="og:locale" content="es_MX" />
+
+  <title>Jose Luis Serna · Product Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress__bar" id="scrollProgressBar"></div>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand" aria-label="Inicio">
+        <span class="nav__dot" aria-hidden="true"></span>
+        <span class="nav__name">Jose Luis Serna</span>
+      </a>
+
+      <nav class="nav__menu" aria-label="Navegación principal">
+        <a href="#perfil" class="nav__link">Perfil</a>
+        <a href="#stack" class="nav__link">Stack</a>
+        <a href="#proyectos" class="nav__link">Proyectos</a>
+        <a href="#proceso" class="nav__link">Proceso</a>
+        <a href="#contacto" class="nav__link nav__link--cta">Contacto</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-mobile" id="navMobile" aria-hidden="true">
+    <a href="#perfil" class="nav-mobile__link">01 · Perfil</a>
+    <a href="#stack" class="nav-mobile__link">02 · Stack</a>
+    <a href="#fortalezas" class="nav-mobile__link">03 · Fortalezas</a>
+    <a href="#proyectos" class="nav-mobile__link">04 · Proyectos</a>
+    <a href="#proceso" class="nav-mobile__link">05 · Proceso</a>
+    <a href="#empresa" class="nav-mobile__link">06 · Para tu empresa</a>
+    <a href="#contacto" class="nav-mobile__link">07 · Contacto</a>
+  </div>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__accent-left" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <div class="hero__kicker">
+          <span class="kicker">Portafolio · 2026</span>
+        </div>
+
+        <h1 class="hero__title" data-reveal data-reveal-split>
+          Jose Luis<br />Serna.
+        </h1>
+
+        <div class="hero__underline" data-reveal data-reveal-delay="300" aria-hidden="true"></div>
+
+        <p class="hero__role" data-reveal data-reveal-delay="400">
+          Product Engineer · Solo builder
+        </p>
+
+        <p class="hero__tagline" data-reveal data-reveal-delay="550">
+          Construyo productos completos —de la base de datos a la última animación— con sensibilidad de diseño y criterio de sistema.
+        </p>
+
+        <div class="hero__cta" data-reveal data-reveal-delay="700">
+          <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn--ghost">Hablemos →</a>
+        </div>
+      </div>
+
+      <div class="hero__meta">
+        <div class="hero__meta-block">
+          <span class="meta-label">Creador de</span>
+          <strong class="meta-value">Nowdii · nowdii.com</strong>
+          <span class="meta-sub">La red social de los negocios locales</span>
+        </div>
+        <div class="hero__meta-block hero__meta-block--right">
+          <span class="meta-label">Base</span>
+          <strong class="meta-value">Zacualtipán, Hidalgo</strong>
+          <span class="meta-sub">México · Abril 2026</span>
+        </div>
+      </div>
+
+      <div class="hero__n" aria-hidden="true">n</div>
+
+      <a href="#perfil" class="hero__scroll" aria-label="Bajar al perfil">
+        <span class="hero__scroll-label">Scroll</span>
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- 01 · PERFIL -->
+    <section class="section section--perfil" id="perfil">
+      <div class="section__inner">
+        <div class="section__head">
+          <span class="section__number">01 · Perfil</span>
+          <h2 class="section__title" data-reveal>
+            Qué hago <span class="em">—</span> y por qué<br />es raro encontrarlo
+          </h2>
+          <div class="section__underline" aria-hidden="true"></div>
+        </div>
+
+        <div class="perfil__body">
+          <p class="lead" data-reveal>
+            Diseño, programo y opero productos completos por mi cuenta. Construyo el frontend con la misma atención que el backend, tomo decisiones de producto sin esperar a que alguien me diga qué quiere, y documento lo que hago para que cualquiera pueda continuar sin mí. No soy <em>"un desarrollador que también diseña"</em> ni <em>"un diseñador que programa"</em> — soy el perfil intermedio que la mayoría de equipos pequeños necesita pero no siempre encuentra.
+          </p>
+
+          <p class="body" data-reveal>
+            Mi especialidad es llevar productos de cero a producción sin intermediarios: esquema de base de datos, endpoints serverless, autenticación, PWA, diseño visual, animaciones, micro-copy, flujos de error, onboarding, panel de administración. Todo en el mismo repositorio, todo con criterio consistente, todo pensado para que el usuario sienta que está acompañado sin tener a nadie enfrente.
+          </p>
+
+          <p class="body" data-reveal>
+            Trabajo mejor cuando hay un problema real sin resolver y recursos limitados. Ahí es donde el perfil full-stack solitario rinde: las decisiones se toman rápido porque no hay ping-pong entre roles, y la calidad no se diluye porque la misma persona que escribió la regla de seguridad en la base de datos es la que pintó el botón que la activa.
+          </p>
+
+          <blockquote class="pull-quote" data-reveal>
+            <p>"Que el usuario sienta que está acompañado sin tener a nadie, solo por el simple hecho de que la interfaz está diseñada para no tener dudas."</p>
+            <footer><span class="em">—</span> Principio de diseño que guía todo lo que construyo.</footer>
+          </blockquote>
+        </div>
+
+        <div class="numbers" data-reveal>
+          <h3 class="numbers__title">En números</h3>
+          <div class="numbers__grid">
+            <div class="number-card">
+              <div class="number-card__underline" aria-hidden="true"></div>
+              <strong class="number-card__value">27 K</strong>
+              <span class="number-card__label">Líneas de JS<br />en producción</span>
+            </div>
+            <div class="number-card">
+              <div class="number-card__underline" aria-hidden="true"></div>
+              <strong class="number-card__value">8</strong>
+              <span class="number-card__label">Endpoints<br />serverless</span>
+            </div>
+            <div class="number-card">
+              <div class="number-card__underline" aria-hidden="true"></div>
+              <strong class="number-card__value">14</strong>
+              <span class="number-card__label">Tablas<br />en Supabase</span>
+            </div>
+            <div class="number-card">
+              <div class="number-card__underline" aria-hidden="true"></div>
+              <strong class="number-card__value">192<span class="plus">+</span></strong>
+              <span class="number-card__label">Versiones<br />del SW</span>
+            </div>
+          </div>
+          <p class="numbers__footnote">
+            Todas son métricas del proyecto Nowdii, que construí y opero solo en paralelo al resto de mi vida profesional.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 · STACK -->
+    <section class="section section--stack" id="stack">
+      <div class="section__inner">
+        <div class="section__head">
+          <span class="section__number">02 · Stack</span>
+          <h2 class="section__title" data-reveal>Con qué construyo</h2>
+          <div class="section__underline" aria-hidden="true"></div>
+        </div>
+
+        <p class="lead" data-reveal>
+          El stack que uso es deliberadamente pequeño. Prefiero dominar pocas piezas a fondo que rotar librerías cada seis meses. La decisión de no usar frameworks de frontend en Nowdii no es dogma — es reconocer que en un proyecto que quiero operar solo durante años, cada dependencia nueva es un compromiso de mantenimiento futuro.
+        </p>
+
+        <div class="stack-group" data-reveal>
+          <h3 class="stack-group__title">Frontend <span class="em">·</span> cliente</h3>
+          <dl class="stack-list">
+            <div class="stack-row">
+              <dt class="stack-row__term">HTML + CSS + JS <span class="dim">(vanilla)</span></dt>
+              <dd class="stack-row__desc">Sin framework. Componentes compartidos vía <code>window.NowdiiX</code> + tokens de diseño en CSS custom properties.</dd>
+            </div>
+            <div class="stack-row">
+              <dt class="stack-row__term">PWA</dt>
+              <dd class="stack-row__desc">Service Worker con estrategia network-first + fallback offline + versionado manual para forzar actualización.</dd>
+            </div>
+            <div class="stack-row">
+              <dt class="stack-row__term">Leaflet</dt>
+              <dd class="stack-row__desc">Mapa de descubrimiento con clustering y pines categorizados.</dd>
+            </div>
+            <div class="stack-row">
+              <dt class="stack-row__term">jsQR</dt>
+              <dd class="stack-row__desc">Lectura de códigos QR en cámara del navegador (lazy-load desde CDN).</dd>
+            </div>
+            <div class="stack-row">
+              <dt class="stack-row__term">Librerías concretas cuando hacen falta</dt>
+              <dd class="stack-row__desc">qrcode-generator, Resend, nada más.</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="stack-group" data-reveal>
+          <h3 class="stack-group__title">Backend <span class="em">·</span> plataforma</h3>
+          <dl class="stack-list">
+            <div class="stack-row">
+              <dt class="stack-row__term">Supabase</dt>
+              <dd class="stack-row__desc">Postgres + Auth (Google/Facebook/Email) + Storage + RPC + RLS. Migraciones SQL idempotentes versionadas en <code>/docs/sql</code>.</dd>
+            </div>
+            <div class="stack-row">
+              <dt class="stack-row__term">Vercel Serverless Functions</dt>
+              <dd class="stack-row__desc">8 endpoints en Node: OG images, short links, canjes QR, validación de códigos digitales, email transaccional.</dd>
+            </div>
+            <div class="stack-row">
+              <dt class="stack-row__term">RLS con dos perfiles</dt>
+              <dd class="stack-row__desc">Clientes usan la anon key con políticas restrictivas; endpoints críticos usan <code>service_role</code> con validación server-side explícita (ownership, anti-spoofing, geofencing).</dd>
+            </div>
+            <div class="stack-row">
+              <dt class="stack-row__term">Triggers + RPC en Postgres</dt>
+              <dd class="stack-row__desc">Generación atómica de slugs únicos, códigos de 14 caracteres con alfabeto sin ambigüedad, contadores de canjes.</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="stack-group" data-reveal>
+          <h3 class="stack-group__title">Herramientas de proceso</h3>
+          <dl class="stack-list">
+            <div class="stack-row">
+              <dt class="stack-row__term">Git + GitHub</dt>
+              <dd class="stack-row__desc">100+ commits en la última semana. Auto-deploy en push a main.</dd>
+            </div>
+            <div class="stack-row">
+              <dt class="stack-row__term">Documentación viva</dt>
+              <dd class="stack-row__desc">Markdown en <code>/docs</code>: arquitectura, base de datos, visión, plan por etapas. Se actualiza en cada cierre de feature.</dd>
+            </div>
+            <div class="stack-row">
+              <dt class="stack-row__term">Demos HTML aislados</dt>
+              <dd class="stack-row__desc">Cada rediseño grande se prototipa en un HTML auto-contenido con baseline + 3 opciones + comparativa antes de tocar producción.</dd>
+            </div>
+            <div class="stack-row">
+              <dt class="stack-row__term">Claude Code</dt>
+              <dd class="stack-row__desc">Asistente de código para tareas repetitivas; las decisiones de producto las tomo yo.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 · FORTALEZAS -->
+    <section class="section section--fortalezas" id="fortalezas">
+      <div class="section__inner">
+        <div class="section__head">
+          <span class="section__number">03 · Fortalezas</span>
+          <h2 class="section__title" data-reveal>Lo que me distingue</h2>
+          <div class="section__underline" aria-hidden="true"></div>
+        </div>
+
+        <p class="lead" data-reveal>
+          Estas seis fortalezas no son autoreportadas — son observables en el repositorio de Nowdii. Cada una tiene evidencia concreta en código, documentación o decisiones de arquitectura.
+        </p>
+
+        <div class="fortalezas__grid">
+          <article class="fortaleza" data-reveal>
+            <span class="fortaleza__n">01</span>
+            <div class="fortaleza__underline" aria-hidden="true"></div>
+            <h3 class="fortaleza__title">Arquitectura pragmática</h3>
+            <p class="fortaleza__body">Sé qué NO usar. Elegí vanilla JS en lugar de React porque el proyecto está pensado para operarse solo durante años; cada dependencia nueva es deuda futura. El stack (Supabase + Vercel + PWA) está calibrado para que una sola persona pueda construir, desplegar y mantener sin fricción.</p>
+          </article>
+
+          <article class="fortaleza" data-reveal>
+            <span class="fortaleza__n">02</span>
+            <div class="fortaleza__underline" aria-hidden="true"></div>
+            <h3 class="fortaleza__title">Ingeniería de sistema</h3>
+            <p class="fortaleza__body">Pienso en condiciones de carrera antes que en features. La Fase B6 (códigos digitales) usa reserva atómica vía PATCH condicional con rollback explícito si falla cualquier paso posterior. Anti-spoofing cruzando código con oferta. Fast-paths síncronos para el bug conocido de <code>navigator.locks</code> en Supabase JS v2.</p>
+          </article>
+
+          <article class="fortaleza" data-reveal>
+            <span class="fortaleza__n">03</span>
+            <div class="fortaleza__underline" aria-hidden="true"></div>
+            <h3 class="fortaleza__title">UX con sensibilidad real</h3>
+            <p class="fortaleza__body">Tokens de diseño consistentes (colores, radios, tipografía). Tap feedback estilo app nativa. Modales con back-button y breadcrumb. Toasts en lugar de <code>alert()</code>. Estados vacíos con guía. Offline funcional. Cada microdetalle existe para reducir dudas.</p>
+          </article>
+
+          <article class="fortaleza" data-reveal>
+            <span class="fortaleza__n">04</span>
+            <div class="fortaleza__underline" aria-hidden="true"></div>
+            <h3 class="fortaleza__title">Documentación como producto</h3>
+            <p class="fortaleza__body"><code>NOWDII-ARCHITECTURE.md</code> es un mapa de producción: qué tabla lee cada archivo, qué variables globales existen, en qué orden cargan los scripts, cuáles son las 8 conexiones críticas que no se pueden tocar sin entender. Cualquier dev puede continuar el proyecto sin mi intervención.</p>
+          </article>
+
+          <article class="fortaleza" data-reveal>
+            <span class="fortaleza__n">05</span>
+            <div class="fortaleza__underline" aria-hidden="true"></div>
+            <h3 class="fortaleza__title">Proceso disciplinado</h3>
+            <p class="fortaleza__body">Antes de rediseñar la sección más densa del admin, construí un HTML auto-contenido con diagnóstico, baseline, tres opciones visuales y comparativa. Migro en pasos validados en producción (A → B → C entre sesiones), nunca en un big-bang. Cada cierre incluye bump del Service Worker y entrada en el plan.</p>
+          </article>
+
+          <article class="fortaleza" data-reveal>
+            <span class="fortaleza__n">06</span>
+            <div class="fortaleza__underline" aria-hidden="true"></div>
+            <h3 class="fortaleza__title">Visión de producto</h3>
+            <p class="fortaleza__body">Nowdii no es un directorio — es un sistema de confianza. La decisión de que seguir y guardar nunca gateen contenido es un principio estratégico, no una feature. Entiendo monetización (push orgánico vs pagado), growth (captación 1 a 1 antes que ads) y construyo en consecuencia.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 · PROYECTOS -->
+    <section class="section section--proyectos" id="proyectos">
+      <div class="section__inner">
+        <div class="section__head">
+          <span class="section__number">04 · Proyectos</span>
+          <h2 class="section__title" data-reveal>Lo que he construido</h2>
+          <div class="section__underline" aria-hidden="true"></div>
+        </div>
+
+        <article class="proyecto proyecto--hero" data-reveal>
+          <header class="proyecto__header">
+            <div class="proyecto__meta">
+              <span class="proyecto__tag">Caso de estudio</span>
+              <span class="proyecto__status"><span class="status-dot"></span>En producción</span>
+            </div>
+            <h3 class="proyecto__title">
+              Nowdii <span class="em">—</span><br />
+              La red social de los<br />negocios locales
+            </h3>
+            <a href="https://nowdii.com" target="_blank" rel="noopener" class="proyecto__url">
+              nowdii.com <span aria-hidden="true">↗</span>
+            </a>
+          </header>
+
+          <div class="proyecto__intro">
+            <p class="lead">
+              Nowdii es mi proyecto principal y la mejor evidencia de cómo trabajo. Llevo meses construyéndolo solo, en producción, con negocios reales, sin inversión externa y con la disciplina de un equipo de producto completo encarnado en una persona.
+            </p>
+          </div>
+
+          <div class="proyecto__block">
+            <span class="block-label">El problema</span>
+            <h4 class="block-title">Para qué existe</h4>
+            <p class="body">En municipios medianos de México —como Zacualtipán, Hidalgo— los negocios locales viven fragmentados en internet. Facebook los mezcla entre memes y política. Google Maps tiene ubicaciones pero los perfiles son planos, sin vida, y posicionarse correctamente es tedioso. Instagram muestra fotos pero no genera confianza estructurada. TikTok hace viral el contenido pero no deja información útil. Los grupos de WhatsApp y Facebook son caóticos y las recomendaciones suelen venir del propio dueño o sus conocidos.</p>
+            <p class="body">El cliente termina preguntando <em>"¿dónde llevo mi carro al mecánico?"</em> en un grupo de 15.000 personas y recibe 15 respuestas de conocidos del mecánico. No confía en esa información y lo sabe.</p>
+          </div>
+
+          <div class="proyecto__block">
+            <span class="block-label">La visión</span>
+            <h4 class="block-title">Qué estoy construyendo</h4>
+            <p class="body">Nowdii es el espacio digital donde los negocios muestran su identidad completa —quiénes son, qué ofrecen, cómo se ven, dónde están, qué tan confiables son— de forma ordenada, verificada y permanente. Es a los negocios locales lo que LinkedIn es a los profesionales: el lugar donde se construye credibilidad real, no solo presencia.</p>
+            <blockquote class="pull-quote pull-quote--inline">
+              <p>"Mañana alguien dirá: oye Nowdii, quiero ir a Zacualtipán, ¿dónde puedo comer, cuáles son los mejor calificados, dónde atienden más rápido? Y Nowdii lo resuelve en segundos porque tiene los datos limpios y verificados que otros directorios no tienen."</p>
+            </blockquote>
+            <p class="body">La apuesta estructural es que el activo no es el código —ese lo puede copiar cualquiera— sino los datos verificados que la comunidad aporta. Cuando la IA alcance madurez para responder búsquedas conversacionales, Nowdii ya tendrá la base de datos más confiable de la región porque otros directorios aceptaron todo sin criterio.</p>
+          </div>
+
+          <div class="proyecto__block">
+            <span class="block-label">Arquitectura</span>
+            <h4 class="block-title">Cómo está construido</h4>
+            <p class="body">Nowdii corre sobre tres capas: un frontend vanilla servido como PWA, una plataforma Supabase para datos y auth, y endpoints serverless en Vercel para operaciones críticas que no pueden ejecutarse con anon key. Todo el código vive en un solo repositorio privado y se despliega automáticamente en cada push a main.</p>
+
+            <div class="arch-grid">
+              <div class="arch-item">
+                <h5 class="arch-item__title">Capa de datos</h5>
+                <p class="arch-item__desc">Postgres en Supabase con 14 tablas principales. RLS habilitado en todas las tablas sensibles, con políticas específicas por rol. Funciones RPC en plpgsql para operaciones atómicas (generación de slugs únicos, comprobantes de canje, códigos <code>NOW-XXXX-YYYYY</code>). Migraciones SQL idempotentes en <code>/docs/sql</code>.</p>
+              </div>
+              <div class="arch-item">
+                <h5 class="arch-item__title">Capa de búsqueda</h5>
+                <p class="arch-item__desc">Sistema de dos niveles: server-side usa un RPC que consulta primero una tabla de intenciones curada y cae en Full-Text Search si no hay match. Client-side es un fallback con scoring local que usa diccionario de sinónimos, stopwords e intenciones hardcodeadas.</p>
+              </div>
+              <div class="arch-item">
+                <h5 class="arch-item__title">Capa de aplicación</h5>
+                <p class="arch-item__desc">Módulos globales compartidos (<code>window.NowdiiFlyer</code>, <code>NowdiiScanner</code>, <code>NowdiiCodigoModal</code>, <code>NowdiiShare</code>, <code>nToast</code>, <code>nConfirm</code>) que encapsulan flujos completos invocables desde cualquier página.</p>
+              </div>
+              <div class="arch-item">
+                <h5 class="arch-item__title">Capa serverless</h5>
+                <p class="arch-item__desc">Ocho endpoints en Vercel. Los simples (<code>og.js</code>, <code>c.js</code>) no manejan auth. Los críticos (<code>canje.js</code>, <code>codigo-validar.js</code>, <code>codigo-generar.js</code>) validan Bearer JWT, cruzan ownership contra la tabla usuarios, y usan service_role con validación explícita en código.</p>
+              </div>
+              <div class="arch-item arch-item--wide">
+                <h5 class="arch-item__title">Capa de confianza</h5>
+                <p class="arch-item__desc">Badges de verificación en 3 niveles (Azul automático, Dorado con 50+ reseñas positivas, Plateado con 200+). Sistema de reputación por atributos en beta: en lugar de estrellas promedio, cada negocio se pinta con el atributo que más destaca (Rápido / Sabor / Precio justo / Atención / Limpio) según las aportaciones reales de usuarios verificados.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="proyecto__block">
+            <span class="block-label">Deep dive</span>
+            <h4 class="block-title">Fase B <span class="em">—</span> sistema de canjes en dos canales</h4>
+            <p class="body">Para ilustrar el nivel de detalle con el que construyo, lo que hice el fin de semana del 19 de abril es un buen ejemplo. En dos días cerré una fase completa que incluye dos flujos paralelos de canje de ofertas, dos tablas nuevas, cuatro endpoints y los componentes UI necesarios para que el usuario no dude qué hacer.</p>
+
+            <div class="fase-grid">
+              <div class="fase-col">
+                <h5 class="fase-col__title">Canal <code>qr_fisico</code> <span class="em">·</span> negocios con local</h5>
+                <p class="body-small">El cliente toca "Canjear ahora" en el flyer de la oferta. Se abre un modal fullscreen con la cámara. jsQR detecta el QR del mostrador (una URL <code>/c/&lt;slug&gt;</code>). Se pide geolocalización y se hace POST al endpoint. El servidor valida Bearer JWT, busca el negocio por el slug del QR, calcula Haversine contra las coordenadas del usuario (radio configurable por variable de entorno), verifica UNIQUE por user+oferta, genera un comprobante de 5 caracteres vía RPC e inserta el canje en estado "presunto" con service_role.</p>
+              </div>
+              <div class="fase-col">
+                <h5 class="fase-col__title">Canal <code>codigo_digital</code> <span class="em">·</span> negocios sin local</h5>
+                <p class="body-small">El operador entra a su panel, selecciona una oferta activa y pulsa "Generar código". El endpoint crea un código <code>NOW-XXXX-YYYYY</code> con 30 minutos de vigencia (alfabeto sin ambigüedad: sin I, L, O, 0, 1). El operador copia el código y lo manda por WhatsApp al cliente. El cliente toca "Tengo un código" en el flyer, lo teclea (con autoformat) y se valida.</p>
+              </div>
+            </div>
+
+            <div class="callout">
+              <span class="callout__label">La parte difícil — reserva atómica y rollback</span>
+              <p>El endpoint de validación es lo que mejor muestra cómo pienso. Dos clientes podrían intentar usar el mismo código al mismo tiempo. Un SELECT + INSERT secuencial abriría una ventana de carrera. En lugar de eso, el flujo cierra en cinco pasos controlados: <strong>reserva atómica</strong> (PATCH condicional), <strong>anti-spoofing</strong> (código ↔ oferta), <strong>generación de comprobante</strong> (RPC con rollback), <strong>INSERT del canje</strong> con <code>Prefer: return=representation</code>, y <strong>vinculación código ↔ canje</strong> en best-effort. El resultado: el endpoint nunca deja un código reservado sin canje asociado, nunca inserta un canje sin liberar el código si falla el resto, y nunca permite doble uso.</p>
+            </div>
+          </div>
+
+          <div class="proyecto__block">
+            <span class="block-label">Métricas</span>
+            <h4 class="block-title">Dónde está hoy</h4>
+            <div class="metrics-row">
+              <div class="metric"><strong>27K</strong><span>líneas JS prod</span></div>
+              <div class="metric"><strong>14</strong><span>tablas Supabase</span></div>
+              <div class="metric"><strong>8</strong><span>endpoints serverless</span></div>
+              <div class="metric"><strong>192+</strong><span>versiones SW</span></div>
+              <div class="metric"><strong>100+</strong><span>commits / semana</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="proyecto proyecto--card" data-reveal>
+          <header class="proyecto__header">
+            <div class="proyecto__meta">
+              <span class="proyecto__tag">Negocio propio</span>
+              <span class="proyecto__status"><span class="status-dot"></span>En línea</span>
+            </div>
+            <h3 class="proyecto__title proyecto__title--md">
+              Deedpri <span class="em">—</span><br />
+              Centro de impresión
+            </h3>
+            <a href="https://deedpri.com" target="_blank" rel="noopener" class="proyecto__url">
+              deedpri.com <span aria-hidden="true">↗</span>
+            </a>
+          </header>
+
+          <div class="proyecto__card-body">
+            <p class="body">Sitio web del centro de impresión que opero. Construido solo —diseño, código y contenido— para mostrar los servicios del negocio de forma ordenada a clientes locales.</p>
+            <p class="body">Es el mismo criterio aplicado a una escala distinta: una sola persona tomando todas las decisiones, stack ligero, carga rápida, y la información exactamente donde el cliente la espera. Sin capas innecesarias para un negocio que lo que necesita es <em>funcionar bien</em>, no impresionar.</p>
+
+            <dl class="mini-stack">
+              <div class="mini-stack__row"><dt>Rol</dt><dd>Diseño + desarrollo + contenido</dd></div>
+              <div class="mini-stack__row"><dt>Enfoque</dt><dd>Vitrina de servicios, claridad sobre alardes</dd></div>
+              <div class="mini-stack__row"><dt>Para</dt><dd>Clientes de Zacualtipán y la región</dd></div>
+            </dl>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 05 · PROCESO -->
+    <section class="section section--proceso" id="proceso">
+      <div class="section__inner">
+        <div class="section__head">
+          <span class="section__number">05 · Proceso</span>
+          <h2 class="section__title" data-reveal>Cómo trabajo</h2>
+          <div class="section__underline" aria-hidden="true"></div>
+        </div>
+
+        <p class="lead" data-reveal>
+          Mi proceso está calibrado para que el producto avance rápido sin acumular deuda. Cada feature sigue un ciclo claro que documenté con el tiempo y sigo aplicando.
+        </p>
+
+        <ol class="proceso-list">
+          <li class="proceso-step" data-reveal>
+            <span class="proceso-step__n">01</span>
+            <div class="proceso-step__body">
+              <h3 class="proceso-step__title">Diagnóstico</h3>
+              <p>Antes de escribir código, identifico los puntos de dolor reales. Si es un rediseño, listo los problemas concretos observables; si es una feature nueva, empiezo por "qué cambia en la experiencia del usuario" y después por "qué tabla toca".</p>
+            </div>
+          </li>
+          <li class="proceso-step" data-reveal>
+            <span class="proceso-step__n">02</span>
+            <div class="proceso-step__body">
+              <h3 class="proceso-step__title">Baseline + opciones</h3>
+              <p>Para cambios grandes, construyo un HTML aislado con la versión actual, 2-3 variantes y una comparativa de trade-offs. Esto evita empezar a programar la opción equivocada.</p>
+            </div>
+          </li>
+          <li class="proceso-step" data-reveal>
+            <span class="proceso-step__n">03</span>
+            <div class="proceso-step__body">
+              <h3 class="proceso-step__title">Implementación en pasos</h3>
+              <p>Divido en pasos chicos que se pueden validar en producción. Nunca un big-bang. Cada paso bumpea el Service Worker y se documenta.</p>
+            </div>
+          </li>
+          <li class="proceso-step" data-reveal>
+            <span class="proceso-step__n">04</span>
+            <div class="proceso-step__body">
+              <h3 class="proceso-step__title">Validación en campo</h3>
+              <p>Uso el producto yo mismo en el teléfono, con el navegador abierto al mismo tiempo para inspeccionar. Pruebo en datos móviles para confirmar el perfil de carga.</p>
+            </div>
+          </li>
+          <li class="proceso-step" data-reveal>
+            <span class="proceso-step__n">05</span>
+            <div class="proceso-step__body">
+              <h3 class="proceso-step__title">Cierre + documentación</h3>
+              <p>Cada feature cerrada entra en <code>NOWDII-PLAN.md</code> bajo "Ya en producción" con la fecha, una nota del impacto y los archivos tocados. Si abre pendientes, se documentan.</p>
+            </div>
+          </li>
+          <li class="proceso-step" data-reveal>
+            <span class="proceso-step__n">06</span>
+            <div class="proceso-step__body">
+              <h3 class="proceso-step__title">Criterio sobre cantidad</h3>
+              <p>No todas las ideas que se me ocurren se implementan. Aplico la regla <em>"¿esto resuelve un problema real observable?"</em> antes de escribir nada. Tengo una lista de pendientes reales y una lista separada de mejoras incrementales para cuando hay espacio.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 06 · PARA TU EMPRESA -->
+    <section class="section section--empresa" id="empresa">
+      <div class="section__inner">
+        <div class="section__head">
+          <span class="section__number">06 · Para tu empresa</span>
+          <h2 class="section__title" data-reveal>Qué puedo aportar</h2>
+          <div class="section__underline" aria-hidden="true"></div>
+        </div>
+
+        <p class="lead" data-reveal>
+          Si tu empresa quiere desarrollar un sistema, la pregunta no es si el perfil técnico alcanza — es si alguien puede cubrir varias funciones sin que se diluya la calidad de ninguna. Aquí es donde rindo.
+        </p>
+
+        <div class="empresa-block" data-reveal>
+          <h3 class="empresa-block__title">Lo que puedo hacer desde el día uno</h3>
+          <ul class="empresa-list">
+            <li><strong>Diseñar el esquema de base de datos.</strong> Relaciones, índices, políticas RLS, triggers y RPCs en Postgres. Migraciones idempotentes versionadas.</li>
+            <li><strong>Construir el backend.</strong> Endpoints serverless en Node con validación de auth, ownership cruzado y manejo explícito de concurrencia. Integraciones (Stripe, Resend, SendGrid, WhatsApp Cloud API) donde apliquen.</li>
+            <li><strong>Desarrollar el frontend.</strong> Desde sistemas de diseño propios hasta animaciones custom. Vanilla JS cuando el proyecto lo pide; React/Next si el equipo ya lo usa.</li>
+            <li><strong>Diseñar la experiencia completa.</strong> Flujos de onboarding, paneles de administración, estados vacíos, mensajes de error humanos, micro-copy, tap feedback.</li>
+            <li><strong>Documentar todo.</strong> Arquitectura como mapa, no como README decorativo. Cualquier persona que entre después puede continuar el trabajo.</li>
+            <li><strong>Operar producción.</strong> Deployments, monitoreo, versionado de caches, debugging remoto, manejo de incidentes. He operado Nowdii solo durante meses.</li>
+          </ul>
+        </div>
+
+        <div class="empresa-block" data-reveal>
+          <h3 class="empresa-block__title">Lo que me motiva trabajar</h3>
+          <ul class="empresa-list empresa-list--compact">
+            <li>Problemas reales sin resolver, no proyectos internos para llenar tiempo.</li>
+            <li>Equipos pequeños donde las decisiones se toman rápido y la persona que programa puede discutir la estrategia.</li>
+            <li>Sistemas que van a estar en manos de usuarios no-técnicos y necesitan no tener dudas.</li>
+            <li>Contextos donde el trade-off entre velocidad y calidad se resuelve con criterio, no con procesos de una empresa grande aplicados a un equipo de tres.</li>
+            <li>Stacks dominables. Prefiero 5 herramientas bien entendidas a 20 montadas sin razón.</li>
+          </ul>
+        </div>
+
+        <div class="empresa-block empresa-block--caveat" data-reveal>
+          <h3 class="empresa-block__title">Lo que no pretendo ser</h3>
+          <ul class="empresa-list empresa-list--compact">
+            <li>No soy especialista profundo en ML/IA. Uso modelos como herramientas; no entreno.</li>
+            <li>No soy DevOps ni SRE dedicado. Sé operar producción, pero no construyo infraestructura a escala Netflix.</li>
+            <li>No soy gerente de producto corporativo. Pienso como producto pero ejecuto; no coordino equipos de 30.</li>
+            <li>Soy honesto sobre estas líneas. <strong>Lo que sí hago, lo hago bien.</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 · CONTACTO -->
+    <section class="section section--contacto" id="contacto">
+      <div class="section__inner">
+        <div class="section__head">
+          <span class="section__number">07 · Contacto</span>
+          <h2 class="section__title" data-reveal>Hablemos</h2>
+          <div class="section__underline" aria-hidden="true"></div>
+        </div>
+
+        <p class="lead" data-reveal>
+          Si lo que leíste tiene sentido para lo que tu empresa está construyendo, mándame un mensaje. Me gusta escuchar antes de proponer: cuéntame qué están intentando resolver, qué intentos previos hubo y dónde se atoran hoy. Con eso puedo responder si encajo y, si encajo, cómo empezaríamos.
+        </p>
+
+        <div class="contacto__grid">
+          <dl class="contacto-table" data-reveal>
+            <div class="contacto-row">
+              <dt>Email</dt>
+              <dd><a href="mailto:tamaa3295@gmail.com">tamaa3295@gmail.com</a></dd>
+            </div>
+            <div class="contacto-row">
+              <dt>WhatsApp</dt>
+              <dd><a href="https://wa.me/527713306543" target="_blank" rel="noopener">+52 771 330 6543</a></dd>
+            </div>
+            <div class="contacto-row">
+              <dt>Proyecto vivo</dt>
+              <dd><a href="https://nowdii.com" target="_blank" rel="noopener">nowdii.com</a></dd>
+            </div>
+            <div class="contacto-row">
+              <dt>Base</dt>
+              <dd>Zacualtipán, Hidalgo · México</dd>
+            </div>
+            <div class="contacto-row">
+              <dt>Disponibilidad</dt>
+              <dd>Full-time remoto, híbrido regional o proyectos por hito</dd>
+            </div>
+            <div class="contacto-row">
+              <dt>Código fuente</dt>
+              <dd>Disponible para revisión bajo acuerdo de confidencialidad</dd>
+            </div>
+          </dl>
+
+          <aside class="contacto__cta" data-reveal>
+            <span class="block-label">Lo que sigue</span>
+            <h3 class="contacto__cta-title">Una conversación breve</h3>
+            <p>Con una llamada de 30 minutos tengo suficiente para decidir si el proyecto me entusiasma y si creo que puedo aportar valor real. No me interesa convencer a nadie de contratarme — prefiero que ambas partes lleguen a la conclusión correcta sin filtros.</p>
+            <div class="contacto__buttons">
+              <a href="mailto:tamaa3295@gmail.com?subject=Hablemos%20sobre%20un%20proyecto" class="btn btn--primary">Enviar email</a>
+              <a href="https://wa.me/527713306543?text=Hola%20Jose%2C%20vi%20tu%20portafolio" target="_blank" rel="noopener" class="btn btn--ghost">WhatsApp →</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__col">
+        <strong class="footer__name">Jose Luis Serna</strong>
+        <span class="footer__role">Product Engineer</span>
+      </div>
+      <div class="footer__col footer__col--center">
+        <span class="footer__meta">Documento generado el 20 de abril de 2026</span>
+        <span class="footer__meta footer__meta--dim">Portafolio · v1</span>
+      </div>
+      <div class="footer__col footer__col--right">
+        <a href="#top" class="footer__top">Volver arriba ↑</a>
+        <span class="footer__meta footer__meta--dim">© <span id="year">2026</span> · Zacualtipán, Hidalgo</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
