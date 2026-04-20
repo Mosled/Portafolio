@@ -2,7 +2,7 @@
 
 Portfolio personal de **Mosled** — Product Designer que programa. Construido como tarjeta de presentación digital: sitio estático, rápido, accesible y sin dependencias.
 
-**Live:** [mosled.github.io](https://mosled.github.io) *(una vez publicado)*
+**Live:** [mosled.github.io/Portafolio](https://mosled.github.io/Portafolio/)
 
 ---
 
